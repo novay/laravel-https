@@ -1,0 +1,36 @@
+{
+    "name": "novay/laravel-https",
+    "description": "Laravel Https is middleware to force us to access Secure HTTP requests.",
+    "keywords": [
+            "HTTPS Middleware", 
+            "Laravel Https",
+            "Secure Http",
+            "Https"
+        ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Noviyanto Rahmadi",
+            "email": "novay@enterwind.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Novay\\ForceHttps\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Novay\\ForceHttps\\ForceHttpsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
