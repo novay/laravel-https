@@ -14,7 +14,6 @@
         - [Individual Route Examples](#individual-route-examples)
     - [From Controller File](#from-controller-file)
         - [Controller File Example](#controller-file-example)
-- [File Tree](#file-tree)
 - [License](#license)
 
 ### About
@@ -66,7 +65,7 @@ Or you can variables to your `.env` file.
 ###### Route Group Example:
 
 ```php
-    Route::group(['middleware' => ['web', 'https']], function () {
+    Route::group(['middleware' => ['https']], function () {
         Route::get('/', 'WelcomeController@welcome');
     });
 ```
@@ -92,23 +91,6 @@ Or you can variables to your `.env` file.
     {
        $this->middleware('https');
     }
-```
-
-### File Tree
-
-```bash
-├── .gitignore
-├── LICENSE
-├── README.md
-├── composer.json
-└── src
-    ├── ForceHttpsServiceProvider.php
-    ├── app
-    │   └── Http
-    │       └── Middleware
-    │           └── ForceHttps.php
-    └── config
-        └── laravel-https.php
 ```
 
 ### License
