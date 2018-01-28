@@ -49,7 +49,7 @@ Laravel Https is middleware to force us into Secure HTTP requests.
 3. Optionally publish the packages views, config file, and language files by running the following from your projects root folder:
 
     ```bash
-        php artisan vendor:publish --tag=ForceHttps
+        php artisan vendor:publish --tag=laravel-https
     ```
 
 4. Add the middleware to your routes or controller. See [Usage](#usage).
